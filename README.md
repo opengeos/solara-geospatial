@@ -1,5 +1,7 @@
 # solara-geospatial
 
+## Introduction
+
 A collection of [solara](https://github.com/widgetti/solara) web apps for geospatial applications
 
 Just a proof-of-concept for now. Not all features are working yet. More features will be added in the future. Click on the menu above to see the other pages.
@@ -8,4 +10,16 @@ Just a proof-of-concept for now. Not all features are working yet. More features
 - Solara-Geospatial: <https://github.com/opengeos/solara-geospatial>
 - Solara: <https://github.com/widgetti/solara>
 
-![](https://i.imgur.com/1PbtnQE.gif)
+## Demos
+
+### Cesium
+
+![](https://i.imgur.com/6quoDtN.gif)
+
+### Mapbox
+
+![](https://i.imgur.com/4uIEnAJ.gif)
+
+### MapLibre
+
+![](https://i.imgur.com/o2ZHeTL.gif)
