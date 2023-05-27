@@ -8,7 +8,6 @@ Just a proof-of-concept for now. Not all features are working yet. More features
 
 - Web App: <https://giswqs-solara-geospatial.hf.space>
 - Solara-Geospatial: <https://github.com/opengeos/solara-geospatial>
-- Solara: <https://github.com/widgetti/solara>
 
 ## Demos
 
