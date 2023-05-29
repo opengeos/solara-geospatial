@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:latest
+FROM jupyter/base-notebook:latest
 
 RUN mamba install -c conda-forge leafmap geopandas localtileserver -y && \
     fix-permissions "${CONDA_DIR}" && \

@@ -8,7 +8,7 @@ def Page():
     
     ### Introduction
 
-    **A collection of [solara](https://github.com/widgetti/solara) web apps for geospatial applications.**
+    **A collection of [Solara](https://github.com/widgetti/solara) web apps for geospatial applications.**
 
     Just a proof-of-concept for now. Not all features are working yet. More features will be added in the future. Click on the menu above to see the other pages.
 
@@ -17,17 +17,7 @@ def Page():
 
     ### Demos
 
-    #### Cesium
-
-    ![](https://i.imgur.com/6quoDtN.gif)
-
-    #### Mapbox
-
     ![](https://i.imgur.com/4uIEnAJ.gif)
-
-    #### MapLibre
-
-    ![](https://i.imgur.com/o2ZHeTL.gif)
 
     """
 
