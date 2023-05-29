@@ -1,7 +1,4 @@
-"""
-# ipyleaflet
-Map visualization using [ipyleaflet](https://ipyleaflet.readthedocs.io/), a ipywidgets wrapper for [leaflet.js](https://leafletjs.com/)
-"""
+
 import os
 import mapwidget.cesium as mapwidget
 

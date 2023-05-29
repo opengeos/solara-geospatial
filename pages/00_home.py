@@ -13,7 +13,8 @@ def Page():
     Just a proof-of-concept for now. Not all features are working yet. More features will be added in the future. Click on the menu above to see the other pages.
 
     - Web App: <https://giswqs-solara-geospatial.hf.space>
-    - Solara-Geospatial: <https://github.com/opengeos/solara-geospatial>
+    - GitHub: <https://github.com/opengeos/solara-geospatial>
+    - Hugging Face: <https://huggingface.co/spaces/giswqs/solara-geospatial>
 
     ### Demos
 
