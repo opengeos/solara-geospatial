@@ -46,7 +46,7 @@ class Map(geemap.Map):
 def Page():
     with solara.Column(style={"min-width": "500px"}):
         # solara components support reactive variables
-        solara.SliderInt(label="Zoom level", value=zoom, min=1, max=20)
+        # solara.SliderInt(label="Zoom level", value=zoom, min=1, max=20)
         # using 3rd party widget library require wiring up the events manually
         # using zoom.value and zoom.set
         Map.element(  # type: ignore
