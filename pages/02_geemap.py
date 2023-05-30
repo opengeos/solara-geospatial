@@ -12,6 +12,8 @@ class Map(geemap.Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.add_ee_data()
+        self.add_layer_manager()
+        self.add_inspector()
         
 
     def add_ee_data(self):
@@ -35,7 +37,7 @@ class Map(geemap.Map):
         self.addLayer(
             landsat7,
             {'bands': ['B4', 'B3', 'B2'], 'min': 20, 'max': 200, 'gamma': 2.0},
-            'Landsat 7',
+            'Landsat 7', False
         )
         self.addLayer(states, {}, "US States")
 
@@ -54,6 +56,7 @@ def Page():
             on_center=center.set,
             scroll_wheel_zoom=True,
             add_google_map=True,
+            height="700px"
 
         )
         solara.Text(f"Zoom: {zoom.value}")
