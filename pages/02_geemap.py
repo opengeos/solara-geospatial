@@ -1,4 +1,3 @@
-
 import ee
 import geemap
 
@@ -14,10 +13,8 @@ class Map(geemap.Map):
         self.add_ee_data()
         self.add_layer_manager()
         self.add_inspector()
-        
 
     def add_ee_data(self):
-
         # Add Earth Engine dataset
         dem = ee.Image('USGS/SRTMGL1_003')
         landsat7 = ee.Image('LANDSAT/LE7_TOA_5YEAR/1999_2003').select(
@@ -37,7 +34,8 @@ class Map(geemap.Map):
         self.addLayer(
             landsat7,
             {'bands': ['B4', 'B3', 'B2'], 'min': 20, 'max': 200, 'gamma': 2.0},
-            'Landsat 7', False
+            'Landsat 7',
+            False,
         )
         self.addLayer(states, {}, "US States")
 
@@ -56,8 +54,7 @@ def Page():
             on_center=center.set,
             scroll_wheel_zoom=True,
             add_google_map=True,
-            height="700px"
-
+            height="700px",
         )
         solara.Text(f"Zoom: {zoom.value}")
         solara.Text(f"Center: {center.value}")

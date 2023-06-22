@@ -12,7 +12,7 @@ class Map(leafmap.Map):
         # Add what you want below
         self.add_basemap("OpenTopoMap")
         change_basemap(self)
-        
+
 
 @solara.component
 def Page():
@@ -29,7 +29,6 @@ def Page():
             scroll_wheel_zoom=True,
             toolbar_ctrl=False,
             data_ctrl=False,
-
         )
         solara.Text(f"Zoom: {zoom.value}")
         solara.Text(f"Center: {center.value}")

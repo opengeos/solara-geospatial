@@ -1,4 +1,3 @@
-
 import os
 import mapwidget.cesium as mapwidget
 
@@ -12,6 +11,7 @@ if os.environ.get('CESIUM_TOKEN') is None:
 else:
     token = os.environ.get('CESIUM_TOKEN')
 
+
 @solara.component
 def Page():
     with solara.Column(style={"min-width": "500px", "height": "500px"}):
@@ -20,9 +20,5 @@ def Page():
         # using 3rd party widget library require wiring up the events manually
         # using zoom.value and zoom.set
         mapwidget.Map.element(  # type: ignore
-            center=center.value,
-            altitude=altitude.value,
-            height='600px',
-            width="100%"
+            center=center.value, altitude=altitude.value, height='600px', width="100%"
         )
-

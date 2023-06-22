@@ -13,16 +13,16 @@ class Map(ipyleaflet.Map):
         # Add what you want below
 
         label = widgets.Label('Clicked location')
-        output = widgets.Output()
-        widget = widgets.VBox([label, output])
+        widget = widgets.VBox([label])
         control = ipyleaflet.WidgetControl(widget=widget, position='bottomright')
         self.add_control(control)
-        
+
         def handle_interaction(**kwargs):
             latlon = kwargs.get("coordinates")
             if kwargs.get("type") == "click":
+                output = widgets.Output()
+                widget.children = [label, output]
                 with output:
-                    output.clear_output()
                     print(latlon)
 
         self.on_interaction(handle_interaction)
@@ -38,7 +38,6 @@ def Page():
             center=center.value,
             on_center=center.set,
             scroll_wheel_zoom=True,
-
         )
         solara.Text(f"Zoom: {zoom.value}")
         solara.Text(f"Center: {center.value}")
