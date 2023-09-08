@@ -10,6 +10,7 @@ center = solara.reactive([40, -100])
 class Map(geemap.Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.add_basemap("Esri.WorldImagery")
         self.add_ee_data()
         self.add_layer_manager()
         self.add_inspector()
